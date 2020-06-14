@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Memento Mori Grid</title>
+  </head>
+  <body>
+    <div>
+      <h1>Birth Date</h1>
+      <input type="date" name="birth-date" value="1998-10-31" />
+    </div>
+    <div>
+      <h1>Age Expectancy</h1>
+      <input
+        type="number"
+        name="age-expectancy"
+        min="0"
+        max="123"
+        onkeypress="if (this.value.length > 2) return false;"
+        value="80"
+      />
+    </div>
+    <div>
+      <h1>Grid Type</h1>
+      <input type="radio" name="grid-type" id="yearly" value="yearly" checked />
+      <label for="yearly">Yearly</label>
+
+      <input type="radio" name="grid-type" id="monthly" value="monthly" />
+      <label for="monthly">Monthly</label>
+
+      <input type="radio" name="grid-type" id="weekly" value="weekly" />
+      <label for="weekly">Weekly</label>
+    </div>
+    <div id="container-yearly"></div>
+    <div id="container-monthly"></div>
+    <div id="container-weekly"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
