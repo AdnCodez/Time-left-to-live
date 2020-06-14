@@ -70,6 +70,18 @@
     background: red;
 }
 
+footer{
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+}
+.footer {
+    margin: auto;
+    text-align:center;
+    padding:10px;
+    color:#333;
+}
+
 @media screen and (max-width: 365px) {
     
     #container-yearly {
